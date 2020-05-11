@@ -1,4 +1,4 @@
-# warp-plus-cloudflare
+# Sınırsız warp+ Verisi Metodu
 
 **Not: Bu betik benim tarafımdan yazılmamıştır. sadece kopyalanmış, türkçeleştirilmiş ve "tek başına çalıştırılabilirlik" eklenmiştir.** 😉
 
@@ -6,7 +6,7 @@
 --------------------------------------------------------------------
 ### Bu komut dosyasıyla warp+ hesabınızı süresiz olarak reşarj edebilirsiniz. 📱
 
-### [!] warp+ nedir?
+### [?] warp+ nedir?
 WARP +, daha yüksek hızlar elde etmek ve bağlantınızın İnternet'in uzun vadede şifrelenmesini sağlamak için Cloudflare’nin Argo olarak bilinen sanal özel omurgasını kullanır. [Daha Fazla Bilgi (İngilizce)](https://blog.cloudflare.com/announcing-warp-plus/)
 
 ### [?] betik nasıl kullanılır? *( windows, mac, linux )*
@@ -21,7 +21,7 @@ WARP +, daha yüksek hızlar elde etmek ve bağlantınızın İnternet'in uzun v
 ### [?] tek başına çalışabilir betik (v2)
 - normal bir kullanıcı için yukarıdaki gayet iyidir. bu sürümü yalnızca ne yaptığınızı biliyorsanız kullanın.
 - teknik olarak hiçbir fark yok. ancak bu sürümdeki dosya tek komutta işinizi halleder.
-- ayrıca size kimlik sormaz, rahatsız etmez.
+- ayrıca size kimlik sormaz, rahatsız etmez. bilgi için programı başlatın.
 - çalıştırmak için: `python warp2.py`
 
 ### [?] warp+ ID'sini nasıl alırım?
