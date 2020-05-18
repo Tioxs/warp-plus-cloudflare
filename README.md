@@ -1,9 +1,9 @@
 # Sınırsız warp+ Verisi Metodu
 
-**Not: Bu betik benim tarafımdan yazılmamıştır. sadece kopyalanmış, türkçeleştirilmiş ve "tek başına çalıştırılabilirlik" eklenmiştir.** 😉
+**Not: Bu betik benim tarafımdan yazılmamıştır. sadece tamamlanmış, türkçeleştirilmiş ve "tek başına çalıştırılabilirlik" eklenmiştir.** 😉
 
 ![](https://github.com/ALIILAPRO/warp-plus-cloudflare/blob/master/pic.png)
---------------------------------------------------------------------
+
 ### Bu komut dosyasıyla warp+ hesabınızı süresiz olarak reşarj edebilirsiniz. 📱
 
 ### [?] warp+ nedir?
@@ -23,6 +23,18 @@ WARP +, daha yüksek hızlar elde etmek ve bağlantınızın İnternet'in uzun v
 - teknik olarak hiçbir fark yok. ancak bu sürümdeki dosya tek komutta işinizi halleder.
 - ayrıca size kimlik sormaz, rahatsız etmez. bilgi için programı başlatın.
 - çalıştırmak için: `python warp2.py`
+
+### [?] Androidde çalıştırmak
+
+- [termux](https://play.google.com/store/apps/details?id=com.termux&hl=tr) uygulamasını yükleyin, açın ve şu komutu girin (kopyalayıp yapıştırabilirsiniz):
+- `pkg install git pkg install python && pip install requests`
+- ardından şu komutla giti kendi cihazınıza klonlayın (indirin): 
+- `git clone https://github.com/xorcan/warp-plus-cloudflare.git`
+- betiğin dizinini açın:
+- `cd warp-plus-cloudflare`
+- betiği çalıştını:
+- `python warp{sürüm numarası}.py`
+
 
 ### [?] warp+ ID'sini nasıl alırım?
 
