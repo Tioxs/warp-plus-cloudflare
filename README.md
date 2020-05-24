@@ -26,8 +26,10 @@ WARP +, daha yüksek hızlar elde etmek ve bağlantınızın İnternet'in uzun v
 
 ### [?] Androidde çalıştırmak
 
-- [termux](https://play.google.com/store/apps/details?id=com.termux&hl=tr) uygulamasını yükleyin, açın ve şu komutu girin (kopyalayıp yapıştırabilirsiniz):
-- `pkg install git pkg install python && pip install requests`
+- [termux](https://play.google.com/store/apps/details?id=com.termux&hl=tr) uygulamasını yükleyin, açın ve şu komutları sıra sıra girin (kopyalayıp yapıştırabilirsiniz):
+- `pkg install git`
+- `pkg install python`
+- `pip install requests`
 - ardından şu komutla giti kendi cihazınıza klonlayın (indirin): 
 - `git clone https://github.com/xorcan/warp-plus-cloudflare.git`
 - betiğin dizinini açın:
