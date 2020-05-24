@@ -1,6 +1,8 @@
 # Sınırsız warp+ Verisi Metodu
 ![Code Size](https://img.shields.io/github/languages/code-size/xorcan/warp-plus-cloudflare) ![Top Language](https://img.shields.io/github/languages/top/xorcan/warp-plus-cloudflare) ![GitHub stars](https://img.shields.io/github/stars/xorcan/warp-plus-cloudflare)
 
+![](https://github.com/xorcan/warp-plus-cloudflare/raw/master/script.png)
+
 **Not: Bu betik benim tarafımdan yazılmamıştır. sadece tamamlanmış, türkçeleştirilmiş ve "tek başına çalıştırılabilirlik" eklenmiştir.** 😉
 
 ### Bu komut dosyasıyla warp+ hesabınızı süresiz olarak reşarj edebilirsiniz. 📱
@@ -44,4 +46,4 @@ WARP +, daha yüksek hızlar elde etmek ve bağlantınızın İnternet'in uzun v
 3. Gelişmiş (Advanced) > Tanılamalar (Diagonistics)
 4. İstemci Yapılandırması (Client Configuration)'nın altındaki Kimlik (ID) > basılı tutun ve kopyalayın.
 
-![](https://github.com/ALIILAPRO/warp-plus-cloudflare/blob/master/script.png)
+![](https://github.com/xorcan/warp-plus-cloudflare/blob/master/script.png)
