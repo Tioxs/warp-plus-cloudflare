@@ -1,8 +1,7 @@
 # Sınırsız warp+ Verisi Metodu
+![Code Size](https://img.shields.io/github/languages/code-size/xorcan/warp-plus-cloudflare) ![Top Language](https://img.shields.io/github/languages/top/xorcan/warp-plus-cloudflare) ![GitHub stars](https://img.shields.io/github/stars/xorcan/warp-plus-cloudflare)
 
 **Not: Bu betik benim tarafımdan yazılmamıştır. sadece tamamlanmış, türkçeleştirilmiş ve "tek başına çalıştırılabilirlik" eklenmiştir.** 😉
-
-![](https://github.com/ALIILAPRO/warp-plus-cloudflare/blob/master/pic.png)
 
 ### Bu komut dosyasıyla warp+ hesabınızı süresiz olarak reşarj edebilirsiniz. 📱
 
