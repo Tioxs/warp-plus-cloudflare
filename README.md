@@ -1,7 +1,7 @@
 # Sınırsız warp+ Verisi Metodu
 ![Code Size](https://img.shields.io/github/languages/code-size/xorcan/warp-plus-cloudflare) ![Top Language](https://img.shields.io/github/languages/top/xorcan/warp-plus-cloudflare) ![GitHub stars](https://img.shields.io/github/stars/xorcan/warp-plus-cloudflare)
 
-![](https://github.com/xorcan/warp-plus-cloudflare/raw/master/script.png)
+![](https://github.com/xorcan/warp-plus-cloudflare/raw/master/pic.png)
 
 **Not: Bu betik benim tarafımdan yazılmamıştır. sadece tamamlanmış, türkçeleştirilmiş ve "tek başına çalıştırılabilirlik" eklenmiştir.** 😉
 
