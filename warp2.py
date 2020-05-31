@@ -81,8 +81,8 @@ while True:
 			sys.stdout.write("\r[+] Hazırlanıyor... " + animation[i % len(animation)])
 			sys.stdout.flush()
 		print(f"\n[-] Şu kimlik üzerinde çalışılıyor: {referrer}")    
-		print(f"[:)] {i} GB kullanım hakkı hesabınıza eklendi")
-		print(f"[#] Toplam: {i} Başarılı) {k} Başarısız)")
+		print(f"[:)] {g} GB kullanım hakkı hesabınıza eklendi")
+		print(f"[#] Toplam: {g} Başarılı {b} Başarısız")
 		print("[*] 18 saniye sonra yeni istek gönderilecek.")
 		time.sleep(18)
 	else:
@@ -91,5 +91,5 @@ while True:
 		print("WARP-PLUS-CLOUDFLARE (script)" + " By ALIILAPRO / xorcan v3")
 		print("")
 		print("[:(] Sunucuya bağlanırken hata oluştu")
-		print(f"[#] Toplam: {i} Başarılı {k} Başarısız")
+		print(f"[#] Toplam: {g} Başarılı {b} Başarısız")
 		b = b + 1	
