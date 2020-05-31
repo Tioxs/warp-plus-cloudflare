@@ -80,7 +80,7 @@ while True:
 			sys.stdout.write("\r[+] Hazırlanıyor... " + animation[i % len(animation)])
 			sys.stdout.flush()
 		print(f"\n[-] Şu kimlik üzerinde çalışılıyor: {referrer}")    
-		print(f"[:)] {i} GB kullanım hakkı hesabınıza eklendi")
+		print(f"[:)] {g} GB kullanım hakkı hesabınıza eklendi")
 		print(f"[#] Toplam: {g} Başarılı {b} Başarısız")
 		print("[*] 18 saniye sonra yeni istek gönderilecek.")
 		time.sleep(18)
