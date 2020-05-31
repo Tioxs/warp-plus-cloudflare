@@ -22,8 +22,11 @@ WARP +, daha yüksek hızlar elde etmek ve bağlantınızın İnternet'in uzun v
 ### [?] tek başına çalışabilir betik (v2)
 - normal bir kullanıcı için yukarıdaki gayet iyidir. bu sürümü yalnızca ne yaptığınızı biliyorsanız kullanın.
 - teknik olarak hiçbir fark yok. ancak bu sürümdeki dosya tek komutta işinizi halleder.
-- ayrıca size kimlik sormaz, rahatsız etmez. bilgi için programı başlatın.
+- ayrıca size kimlik sormaz, rahatsız etmez.
+- `warp2.py` dosyasını bir düzenleyici ile açın ve `xorcan` değeri yerine warp+ kimliğinizi yazıp kaydedin.
 - çalıştırmak için: `python warp2.py`
+
+![](https://github.com/xorcan/warp-plus-cloudflare/blob/master/win.jpg)
 
 ### [?] Androidde çalıştırmak
 
@@ -38,7 +41,6 @@ WARP +, daha yüksek hızlar elde etmek ve bağlantınızın İnternet'in uzun v
 - betiği çalıştını:
 - `python warp{sürüm numarası}.py`
 
-
 ### [?] warp+ ID'sini nasıl alırım?
 
 1. 1.1.1.1 uygulamasını açın.
@@ -46,4 +48,4 @@ WARP +, daha yüksek hızlar elde etmek ve bağlantınızın İnternet'in uzun v
 3. Gelişmiş (Advanced) > Tanılamalar (Diagonistics)
 4. İstemci Yapılandırması (Client Configuration)'nın altındaki Kimlik (ID) > basılı tutun ve kopyalayın.
 
-![](https://github.com/xorcan/warp-plus-cloudflare/blob/master/script.png)
+![](https://github.com/xorcan/warp-plus-cloudflare/blob/master/id.jpg)
