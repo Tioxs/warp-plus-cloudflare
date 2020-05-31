@@ -1,23 +1,27 @@
-# Sınırsız warp+ Verisi Metodu
+# sınırsız warp+ verisi alma yöntemi
 ![Code Size](https://img.shields.io/github/languages/code-size/xorcan/warp-plus-cloudflare) ![Top Language](https://img.shields.io/github/languages/top/xorcan/warp-plus-cloudflare) ![GitHub stars](https://img.shields.io/github/stars/xorcan/warp-plus-cloudflare)
 
 ![](https://github.com/xorcan/warp-plus-cloudflare/raw/master/pic.png)
 
-**Not: Bu betik benim tarafımdan yazılmamıştır. sadece tamamlanmış, türkçeleştirilmiş ve "tek başına çalıştırılabilirlik" eklenmiştir.** 😉
+**not: bu betik benim tarafımdan yazılmamıştır. sadece tamamlanmış, türkçeleştirilmiş ve "tek başına çalıştırılabilirlik" eklenmiştir.** 😉
 
-### Bu komut dosyasıyla warp+ hesabınızı süresiz olarak reşarj edebilirsiniz. 📱
+### bu komut dosyasıyla 1.1.1.1 warp+ hesabınızı süresiz olarak reşarj edebilirsiniz. 📱
 
 ### [?] warp+ nedir?
-WARP +, daha yüksek hızlar elde etmek ve bağlantınızın İnternet'in uzun vadede şifrelenmesini sağlamak için Cloudflare’nin Argo olarak bilinen sanal özel omurgasını kullanır. [Daha Fazla Bilgi (İngilizce)](https://blog.cloudflare.com/announcing-warp-plus/)
+warp+, daha yüksek hızlar elde etmek ve bağlantınızın internet'in uzun vadede şifrelenmesini sağlamak için cloudflare’nin argo olarak bilinen sanal özel omurgasını kullanır. [daha fazla bilgi (ingilizce)](https://blog.cloudflare.com/announcing-warp-plus/)
 
 ### [?] betik nasıl kullanılır? *( windows, mac, linux )*
-- Öncelikle Python'u sisteminize kurun. [Python 3.7+](https://www.python.org/downloads/)
-- Modül isteklerini yükleyelim:
-- cmd / terminale kopyalayın ve enterlayın: `pip install requests`
+- öncelikle python'u sisteminize kurun. [python 3.8+](https://www.python.org/downloads/)
+- - windows 10 kullanıyorsanız: 
+- - herhangi bir klasörde shift tuşuyla birlite sağ tıklayıp powershell'i açın
+- - `python` yazın ve enterlayın, sizi mağazaya yönlendirecek.
+- - yönlendirse de yönlendirmese de mağazadan python'u ayrıca indirip kurun.
+- modül isteklerini yükleyelim:
+- aynı yöntemlerle cmd / terminale kopyalayın ve enterlayın: `pip install requests`
 - [buradan](https://github.com/xorcan/warp-plus-cloudflare/archive/master.zip) projeyi indirin ve çıkartın (unzip)
-- Ayıklanan dizinde bir cmd / terminal / kabuk açın
-- Şu satırı girin: `python warp1.py`
-- Komut dosyasını çalıştırın ve kullanın
+- ayıklanan dizinde bir cmd / terminal / kabuk açın
+- şu satırı girin: `python warp1.py`
+- komut dosyasını çalıştırın ve kullanın
 
 ### [?] tek başına çalışabilir betik (v2)
 - normal bir kullanıcı için yukarıdaki gayet iyidir. bu sürümü yalnızca ne yaptığınızı biliyorsanız kullanın.
@@ -28,7 +32,7 @@ WARP +, daha yüksek hızlar elde etmek ve bağlantınızın İnternet'in uzun v
 
 ![](https://github.com/xorcan/warp-plus-cloudflare/blob/master/win.jpg)
 
-### [?] Androidde çalıştırmak
+### [?] androidde çalıştırmak
 
 - [termux](https://play.google.com/store/apps/details?id=com.termux&hl=tr) uygulamasını yükleyin, açın ve şu komutları sıra sıra girin (kopyalayıp yapıştırabilirsiniz):
 - `pkg install git`
@@ -41,11 +45,11 @@ WARP +, daha yüksek hızlar elde etmek ve bağlantınızın İnternet'in uzun v
 - betiği çalıştını:
 - `python warp{sürüm numarası}.py`
 
-### [?] warp+ ID'sini nasıl alırım?
+### [?] warp+ kimliğini (id) nasıl alırım?
 
 1. 1.1.1.1 uygulamasını açın.
-2. Menü (üç nokta) işaretine tıklayın ☰
-3. Gelişmiş (Advanced) > Tanılamalar (Diagonistics)
-4. İstemci Yapılandırması (Client Configuration)'nın altındaki Kimlik (ID) > basılı tutun ve kopyalayın.
+2. menü (üç nokta) işaretine tıklayın ☰
+3. gelişmiş (advanced) > tanılamalar (diagonistics)
+4. i̇stemci yapılandırması (client configuration)'nın altındaki kimlik (id) > basılı tutun ve kopyalayın.
 
 ![](https://github.com/xorcan/warp-plus-cloudflare/blob/master/id.jpg)
