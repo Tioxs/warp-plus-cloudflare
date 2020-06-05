@@ -1,11 +1,8 @@
 <h2 align="center"><a href="https://www.google.com/search?&q=s%C4%B1n%C4%B1rs%C4%B1z+warp%2B+verisi+xorcan" alt="Sınırsız WARP+ Verisi (betik)"><img src="https://github.com/xorcan/warp-plus-cloudflare/raw/master/pic.png" width="250"></a></br>
-<b>Sınırsız 1.1.1.1 WARP+ Verisi (betik)</b></h2>
+<b>Sınırsız 1.1.1.1 WARP+ Verisi (betik)</b></h2><h4 align="center">buradaki betiklerle 1.1.1.1 WARP+ hesabınızı süresiz olarak reşarj edebilirsiniz.</h4>
 
-buradaki betiklerle 1.1.1.1 WARP+ hesabınızı süresiz olarak reşarj edebilirsiniz.
 
-![Kod Boyutu](https://img.shields.io/github/languages/code-size/xorcan/warp-plus-cloudflare) ![Tepe Dil](https://img.shields.io/github/languages/top/xorcan/warp-plus-cloudflare) ![GitHub Yıldızı](https://img.shields.io/github/stars/xorcan/warp-plus-cloudflare) ![Lisans](https://img.shields.io/github/license/xorcan/warp-plus-cloudflare) ![Hatalar](https://img.shields.io/github/issues/xorcan/warp-plus-cloudflare) ![Forklar](https://img.shields.io/github/forks/xorcan/warp-plus-cloudflare)
-
-# sınırsız warp+ verisi alma yöntemi
+<p align="center"><img src="https://img.shields.io/github/languages/code-size/xorcan/warp-plus-cloudflare" alt="Kod Boyutu"> <img src="https://img.shields.io/github/languages/top/xorcan/warp-plus-cloudflare" alt="sınırsız warp+ verisi alma yöntemi"> <img src="https://img.shields.io/github/stars/xorcan/warp-plus-cloudflare" alt="GitHub Yıldızı"> <img src="https://img.shields.io/github/license/xorcan/warp-plus-cloudflare" alt="Lisans"> <img src="https://img.shields.io/github/issues/xorcan/warp-plus-cloudflare" alt="Hatalar"> <img src="https://img.shields.io/github/forks/xorcan/warp-plus-cloudflare" alt="Forklar">
 
 **not: bu betik benim tarafımdan yazılmamıştır. sadece tamamlanmış, türkçeleştirilmiş ve "tek başına çalıştırılabilirlik" eklenmiştir.** 😉
 
@@ -56,11 +53,11 @@ warp+, daha yüksek hızlar elde etmek ve bağlantınızın internet'in uzun vad
 
 ![](https://github.com/xorcan/warp-plus-cloudflare/blob/master/id.jpg)
 
-## uyarı
+## [!] uyarı
 
 Bu makaledeki uygulamaların gizlilik sözleşmelerini okuyunuz. Eğer ne yaptığınızı bilmiyorsanız bu işlemlerden uzak durun. Her cihazın yapısı farklıdır, oluşabilecek sorunlardan makale editörü sorumlu tutulamaz.
 
-## lisans
+## [?] lisans
 
 [![GNU GPLv3 Image](https://www.gnu.org/graphics/gplv3-127x51.png)](http://www.gnu.org/licenses/gpl-3.0.en.html)
 
