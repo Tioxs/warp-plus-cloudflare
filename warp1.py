@@ -8,7 +8,7 @@ import os
 import sys
 import pathlib
 script_version = '3.0.0'
-window_title   = f"WARP-PLUS-CLOUDFLARE (betik)" + " by ALIILAPRO / XORCAN (v {script_version})"
+window_title   = f"WARP-PLUS-CLOUDFLARE by ALIILAPRO / XORCAN (v {script_version})"
 os.system('title ' + window_title if os.name == 'nt' else 'PS1="\[\e]0;' + window_title + '\a\]"; echo $PS1')
 os.system('cls' if os.name == 'nt' else 'clear')
 print ("---------------------------------------------------------------------------")
@@ -32,7 +32,7 @@ print ("------------------------------------------------------------------------
 def newID():
 	while True:
 		referrer  = input("[#] WARP+ Kimliğinizi girin:")
-		user_input = input(f"[?] Kimliğiniz: = ({referrer}) doğru mu? (e/h):")
+		user_input = input(f"[?] Kimliğiniz: {referrer} doğru mu? (e/h):")
 		if user_input == "e":
 			save_id = input("[?] Kimliğinizi kaydetmek ister misiniz? (e/h):")
 			if save_id == "e":
@@ -56,13 +56,13 @@ def progressBar():
 	while True:
 		for i in range(10):
 			percent += 1
-			sys.stdout.write(f"\r[+] Yanıt bekleniyor...  " + save_anim + f" {percent}%")
+			sys.stdout.write(f"\r[+] Yanıt bekleniyor... " + save_anim + f" {percent}%")
 			sys.stdout.flush()
 			time.sleep(0.075)
 		progress_anim += 1
 		save_anim = animation[progress_anim % len(animation)]
 		if percent == 100:
-			sys.stdout.write("\r[+] İstek tamamlandı... [●●●●●●●●●●] 100%")
+			sys.stdout.write("\r[+] İstek tamamlandı... [●●●●●●●●●●] %100")
 			break
 
 def genString(stringLength):
@@ -124,17 +124,17 @@ b = 0
 while True:
 	os.system('cls' if os.name == 'nt' else 'clear')
 	print("")
-	print("WARP-PLUS-CLOUDFLARE (betik)" + " By ALIILAPRO / XORCAN v3")
+	print("WARP-PLUS-CLOUDFLARE (betik)" + " by ALIILAPRO / XORCAN v3")
 	print("")
-	sys.stdout.write("\r[+] İstek gönderiliyor...   [□□□□□□□□□□] 0%")
+	sys.stdout.write("\r[+] İstek gönderiliyor...   [○○○○○○○○○○] %0")
 	sys.stdout.flush()
 	result = run()
 	if result == 200:
 		g += 1
 		progressBar()
-		print(f"\n[-] Şu kimlik üzerinde çalışılıyor: {referrer}")
-		print(f"[:)] {g} GB kullanım hakkı hesabınıza eklendi"
-		print(f"[#] Total: {g} Good {b} Bad")
+		print(f"\n[-] Şu kimlik üzerinde çalışılıyor: {referrer}")    
+		print(f"[:)] {g} GB kullanım hakkı hesabınıza eklendi")
+		print(f"[#] Toplam: {g} Başarılı {b} Başarısız")
 		for i in range(18,0,-1):
 			sys.stdout.write(f"\r[*] {i} saniye sonra yeni bir istek gönderilecek")
 			sys.stdout.flush()
@@ -142,7 +142,7 @@ while True:
 	else:
 		b += 1
 		print("[:(] Sunucuya bağlanırken hata oluştu")
-		print(f"[#] Toplam: {g} Başarılı {b} Başarısız")
+		print(f"[#] Total: {g} Başarılı {b} Başarısız")
 		for i in range(10,0,-1):
 			sys.stdout.write(f"\r[*] {i} saniye içinde tekrar deneniyor...")
 			sys.stdout.flush()
