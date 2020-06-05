@@ -8,11 +8,11 @@ import os
 import sys
 import pathlib
 script_version = '3.0.0'
-window_title   = f"WARP-PLUS-CLOUDFLARE - ALIILAPRO & XORCAN (v {script_version})"
+window_title   = f"WARP-PLUS-CLOUDFLARE - ALIILAPRO / XORCAN (v {script_version})"
 os.system('title ' + window_title if os.name == 'nt' else 'PS1="\[\e]0;' + window_title + '\a\]"; echo $PS1')
 os.system('cls' if os.name == 'nt' else 'clear')
 print ("---------------------------------------------------------------------------")
-print ("[1] 1.1.1.1 için sınırsız WARP+ verisi alma - normal sürüm")
+print ("[1] 1.1.1.1 için sınırsız WARP+ verisi (betik) - normal sürüm")
 print ("---------------------------------------------------------------------------")
 print ("[?] S; WARP+ kimliği (id) nasıl alınır?")
 print ("[-] C; 1.1.1.1 uygulamasından: [ Ayarlar/Gelişmiş/Tanılamalar/Kimlik ]")
@@ -124,7 +124,7 @@ b = 0
 while True:
 	os.system('cls' if os.name == 'nt' else 'clear')
 	print("")
-	print("WARP-PLUS-CLOUDFLARE (betik)" + " - ALIILAPRO & XORCAN v3")
+	print("WARP-PLUS-CLOUDFLARE (betik)" + " - ALIILAPRO / XORCAN v3")
 	print("")
 	sys.stdout.write("\r[+] İstek gönderiliyor...    [□□□□□□□□□□] %0")
 	sys.stdout.flush()
