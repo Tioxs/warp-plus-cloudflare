@@ -8,7 +8,7 @@ import os
 import sys
 import pathlib
 script_version = '3.0.0'
-window_title   = f"WARP-PLUS-CLOUDFLARE by ALIILAPRO / XORCAN (v {script_version})"
+window_title   = f"WARP-PLUS-CLOUDFLARE - ALIILAPRO & XORCAN (v {script_version})"
 os.system('title ' + window_title if os.name == 'nt' else 'PS1="\[\e]0;' + window_title + '\a\]"; echo $PS1')
 os.system('cls' if os.name == 'nt' else 'clear')
 print ("---------------------------------------------------------------------------")
@@ -56,13 +56,13 @@ def progressBar():
 	while True:
 		for i in range(10):
 			percent += 1
-			sys.stdout.write(f"\r[+] Yanıt bekleniyor...      " + save_anim + f" {percent}%")
+			sys.stdout.write(f"\r[+] Yanıt bekleniyor...      " + save_anim + f" %{percent}")
 			sys.stdout.flush()
 			time.sleep(0.075)
 		progress_anim += 1
 		save_anim = animation[progress_anim % len(animation)]
 		if percent == 100:
-			sys.stdout.write("\r[+] İstek tamamlandı...      [■■■■■■■■■■] 100%")
+			sys.stdout.write("\r[+] İstek tamamlandı...      [■■■■■■■■■■] %100")
 			break
 
 def genString(stringLength):
@@ -124,9 +124,9 @@ b = 0
 while True:
 	os.system('cls' if os.name == 'nt' else 'clear')
 	print("")
-	print("WARP-PLUS-CLOUDFLARE (betik)" + " by ALIILAPRO / XORCAN v3")
+	print("WARP-PLUS-CLOUDFLARE (betik)" + " - ALIILAPRO & XORCAN v3")
 	print("")
-	sys.stdout.write("\r[+] İstek gönderiliyor...    [□□□□□□□□□□] 0%")
+	sys.stdout.write("\r[+] İstek gönderiliyor...    [□□□□□□□□□□] %0")
 	sys.stdout.flush()
 	result = run()
 	if result == 200:
