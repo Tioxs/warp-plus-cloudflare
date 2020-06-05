@@ -142,7 +142,7 @@ while True:
 	else:
 		b += 1
 		print("[:(] Sunucuya bağlanırken hata oluştu")
-		print(f"[#] Total: {g} Başarılı {b} Başarısız")
+		print(f"[#] Toplam: {g} Başarılı {b} Başarısız")
 		for i in range(10,0,-1):
 			sys.stdout.write(f"\r[*] {i} saniye içinde tekrar deneniyor...")
 			sys.stdout.flush()
