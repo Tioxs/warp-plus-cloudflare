@@ -32,11 +32,11 @@ print ("------------------------------------------------------------------------
 def newID():
 	while True:
 		referrer  = input("[#] WARP+ Kimliğinizi girin:")
-		user_input = input(f"[?] Kimliğiniz: {referrer} doğru mu? (e/h):")
+		user_input = input(f"[?] Kimliğinizin \"{referrer}\" olduğu doğru mu? (e/h):")
 		if user_input == "e":
 			save_id = input("[?] Kimliğinizi kaydetmek ister misiniz? (e/h):")
 			if save_id == "e":
-			    with open("referrer.txt","w") as file:
+			    with open("warpkimlik.txt","w") as file:
 				    file.write(referrer)
 			    return referrer
 			elif save_id == "h":
@@ -56,13 +56,13 @@ def progressBar():
 	while True:
 		for i in range(10):
 			percent += 1
-			sys.stdout.write(f"\r[+] Yanıt bekleniyor... " + save_anim + f" {percent}%")
+			sys.stdout.write(f"\r[+] Yanıt bekleniyor...      " + save_anim + f" {percent}%")
 			sys.stdout.flush()
 			time.sleep(0.075)
 		progress_anim += 1
 		save_anim = animation[progress_anim % len(animation)]
 		if percent == 100:
-			sys.stdout.write("\r[+] İstek tamamlandı... [■■■■■■■■■■] %100")
+			sys.stdout.write("\r[+] İstek tamamlandı...      [■■■■■■■■■■] 100%")
 			break
 
 def genString(stringLength):
@@ -104,11 +104,11 @@ def run():
 		print("")
 		print(error)	
 
-if pathlib.Path("referrer.txt").exists():
+if pathlib.Path("warpkimlik.txt").exists():
 	while True:
-		user_input = input("[?] Kaydedilmiş warp+ kimliğini kullanmak ister misiniz? (e/h):")
+		user_input = input("[?] Kaydedilmiş WARP+ kimliğini kullanmak ister misiniz? (e/h):")
 		if user_input == "e":
-			with open("referrer.txt","r") as file:
+			with open("warpkimlik.txt","r") as file:
 				referrer = file.read().strip()
 			break
 		elif user_input == "h":
@@ -126,23 +126,23 @@ while True:
 	print("")
 	print("WARP-PLUS-CLOUDFLARE (betik)" + " by ALIILAPRO / XORCAN v3")
 	print("")
-	sys.stdout.write("\r[+] İstek gönderiliyor... [□□□□□□□□□□] %0")
+	sys.stdout.write("\r[+] İstek gönderiliyor...    [□□□□□□□□□□] 0%")
 	sys.stdout.flush()
 	result = run()
 	if result == 200:
 		g += 1
 		progressBar()
 		print(f"\n[-] Şu kimlik üzerinde çalışılıyor: {referrer}")    
-		print(f"[:)] {g} GB kullanım hakkı hesabınıza eklendi")
-		print(f"[#] Toplam: {g} Başarılı {b} Başarısız")
+		print(f"[:)] {g} GB kullanım hakkı hesabınıza eklendi.")
+		print(f"[#] Toplam: {g} Başarılı, {b} Başarısız.")
 		for i in range(18,0,-1):
-			sys.stdout.write(f"\r[*] {i} saniye sonra yeni bir istek gönderilecek")
+			sys.stdout.write(f"\r[*] {i} saniye sonra yeni bir istek gönderilecek.")
 			sys.stdout.flush()
 			time.sleep(1)
 	else:
 		b += 1
-		print("[:(] Sunucuya bağlanırken hata oluştu")
-		print(f"[#] Toplam: {g} Başarılı {b} Başarısız")
+		print("[:(] Sunucuya bağlanırken hata oluştu.")
+		print(f"[#] Toplam: {g} Başarılı, {b} Başarısız.")
 		for i in range(10,0,-1):
 			sys.stdout.write(f"\r[*] {i} saniye içinde tekrar deneniyor...")
 			sys.stdout.flush()
