@@ -6,10 +6,13 @@ import string
 import time
 import os
 import sys
-os.system("title WARP-PLUS-CLOUDFLARE - XORCAN v3")
+import pathlib
+script_version = '3.0.0'
+window_title   = f"WARP-PLUS-CLOUDFLARE - ALIILAPRO / XORCAN (v {script_version})"
+os.system('title ' + window_title if os.name == 'nt' else 'PS1="\[\e]0;' + window_title + '\a\]"; echo $PS1')
 os.system('cls' if os.name == 'nt' else 'clear')
 print ("---------------------------------------------------------------------------")
-print ("[2] 1.1.1.1 için sınırsız WARP+ verisi metodu - sorusuz sürüm")
+print ("[2] 1.1.1.1 için sınırsız WARP+ verisi (betik) - sorusuz sürüm")
 print ("---------------------------------------------------------------------------")
 print ("[?] S; WARP+ kimliği (id) nasıl alınır?")
 print ("[-] C; 1.1.1.1 uygulamasından: [ Ayarlar/Gelişmiş/Tanılamalar/Kimlik ]")
@@ -26,7 +29,26 @@ print ("[i] aliilapro tarafından yazıldı [ aliilapro.github.io ]")
 print ("[i] xorcan tarafından türkçeleştirildi [ github.com/xorcan ]")
 print ("[i] anlatımı hazırlayan kişiye teşekkürler: anonim")
 print ("---------------------------------------------------------------------------")
+
 referrer = "xorcan"
+
+def progressBar():
+	animation     = ["[□□□□□□□□□□]","[■□□□□□□□□□]","[■■□□□□□□□□]", "[■■■□□□□□□□]", "[■■■■□□□□□□]", "[■■■■■□□□□□]", "[■■■■■■□□□□]", "[■■■■■■■□□□]", "[■■■■■■■■□□]", "[■■■■■■■■■□]"]
+	progress_anim = 0
+	save_anim     = animation[progress_anim % len(animation)]
+	percent       = 0
+	while True:
+		for i in range(10):
+			percent += 1
+			sys.stdout.write(f"\r[+] Yanıt bekleniyor...      " + save_anim + f" %{percent}")
+			sys.stdout.flush()
+			time.sleep(0.075)
+		progress_anim += 1
+		save_anim = animation[progress_anim % len(animation)]
+		if percent == 100:
+			sys.stdout.write("\r[+] İstek tamamlandı...      [■■■■■■■■■■] %100")
+			break
+
 def genString(stringLength):
 	try:
 		letters = string.ascii_letters + string.digits
@@ -42,8 +64,8 @@ def digitString(stringLength):
 url = f'https://api.cloudflareclient.com/v0a{digitString(3)}/reg'
 def run():
 	try:
-		install_id = genString(11)
-		body = {"key": "{}=".format(genString(42)),
+		install_id = genString(22)
+		body = {"key": "{}=".format(genString(43)),
 				"install_id": install_id,
 				"fcm_token": "{}:APA91b{}".format(install_id, genString(134)),
 				"referrer": referrer,
@@ -63,33 +85,34 @@ def run():
 		status_code = response.getcode()	
 		return status_code
 	except Exception as error:
+		print("")
 		print(error)	
 
 g = 0
 b = 0
 while True:
+	os.system('cls' if os.name == 'nt' else 'clear')
+	print("")
+	print("WARP-PLUS-CLOUDFLARE (betik)" + " - ALIILAPRO / XORCAN v3")
+	print("")
+	sys.stdout.write("\r[+] İstek gönderiliyor...    [□□□□□□□□□□] %0")
+	sys.stdout.flush()
 	result = run()
 	if result == 200:
-		g = g + 1
-		os.system('cls' if os.name == 'nt' else 'clear')
-		print("")
-		print("WARP-PLUS-CLOUDFLARE (script)" + " By ALIILAPRO / xorcan v3")
-		print("")
-		animation = ["[■□□□□□□□□□] 10%","[■■□□□□□□□□] 20%", "[■■■□□□□□□□] 30%", "[■■■■□□□□□□] 40%", "[■■■■■□□□□□] 50%", "[■■■■■■□□□□] 60%", "[■■■■■■■□□□] 70%", "[■■■■■■■■□□] 80%", "[■■■■■■■■■□] 90%", "[■■■■■■■■■■] 100%"] 
-		for i in range(len(animation)):
-			time.sleep(0.5)
-			sys.stdout.write("\r[+] Hazırlanıyor... " + animation[i % len(animation)])
-			sys.stdout.flush()
+		g += 1
+		progressBar()
 		print(f"\n[-] Şu kimlik üzerinde çalışılıyor: {referrer}")    
-		print(f"[:)] {g} GB kullanım hakkı hesabınıza eklendi")
-		print(f"[#] Toplam: {g} Başarılı {b} Başarısız")
-		print("[*] 18 saniye sonra yeni istek gönderilecek.")
-		time.sleep(18)
+		print(f"[:)] {g} GB kullanım hakkı hesabınıza eklendi.")
+		print(f"[#] Toplam: {g} Başarılı, {b} Başarısız.")
+		for i in range(18,0,-1):
+			sys.stdout.write(f"\r[*] {i} saniye sonra yeni bir istek gönderilecek.")
+			sys.stdout.flush()
+			time.sleep(1)
 	else:
-		os.system('cls' if os.name == 'nt' else 'clear')
-		print("")
-		print("WARP-PLUS-CLOUDFLARE (script)" + " By ALIILAPRO / xorcan v3")
-		print("")
-		print("[:(] Sunucuya bağlanırken hata oluştu")
-		print(f"[#] Toplam: {g} Başarılı {b} Başarısız")
-		b = b + 1	
+		b += 1
+		print("[:(] Sunucuya bağlanırken hata oluştu.")
+		print(f"[#] Toplam: {g} Başarılı, {b} Başarısız.")
+		for i in range(10,0,-1):
+			sys.stdout.write(f"\r[*] {i} saniye içinde tekrar deneniyor...")
+			sys.stdout.flush()
+			time.sleep(1)
