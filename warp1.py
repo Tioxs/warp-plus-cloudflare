@@ -49,7 +49,7 @@ def newID():
 			print(f"\"{user_input}\" geçerli bir parametre değil.")
 
 def progressBar():
-	animation     = ["[○○○○○○○○○○]","[●○○○○○○○○○]","[●●○○○○○○○○]", "[●●●○○○○○○○]", "[●●●●○○○○○○]", "[●●●●●○○○○○]", "[●●●●●●○○○○]", "[●●●●●●●○○○]", "[●●●●●●●●○○]", "[●●●●●●●●●○]"]
+	animation     = ["[□□□□□□□□□□]","[■□□□□□□□□□]","[■■□□□□□□□□]", "[■■■□□□□□□□]", "[■■■■□□□□□□]", "[■■■■■□□□□□]", "[■■■■■■□□□□]", "[■■■■■■■□□□]", "[■■■■■■■■□□]", "[■■■■■■■■■□]"]
 	progress_anim = 0
 	save_anim     = animation[progress_anim % len(animation)]
 	percent       = 0
@@ -62,7 +62,7 @@ def progressBar():
 		progress_anim += 1
 		save_anim = animation[progress_anim % len(animation)]
 		if percent == 100:
-			sys.stdout.write("\r[+] İstek tamamlandı... [●●●●●●●●●●] %100")
+			sys.stdout.write("\r[+] İstek tamamlandı... [■■■■■■■■■■] %100")
 			break
 
 def genString(stringLength):
@@ -126,7 +126,7 @@ while True:
 	print("")
 	print("WARP-PLUS-CLOUDFLARE (betik)" + " by ALIILAPRO / XORCAN v3")
 	print("")
-	sys.stdout.write("\r[+] İstek gönderiliyor...   [○○○○○○○○○○] %0")
+	sys.stdout.write("\r[+] İstek gönderiliyor... [□□□□□□□□□□] %0")
 	sys.stdout.flush()
 	result = run()
 	if result == 200:
