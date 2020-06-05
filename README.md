@@ -1,11 +1,13 @@
-# sınırsız warp+ verisi alma yöntemi
-![Code Size](https://img.shields.io/github/languages/code-size/xorcan/warp-plus-cloudflare) ![Top Language](https://img.shields.io/github/languages/top/xorcan/warp-plus-cloudflare) ![GitHub stars](https://img.shields.io/github/stars/xorcan/warp-plus-cloudflare)
+<h2 align="center"><a href="https://www.google.com/search?&q=s%C4%B1n%C4%B1rs%C4%B1z+warp%2B+verisi+xorcan" alt="Sınırsız WARP+ Verisi (betik)"><img src="https://github.com/xorcan/warp-plus-cloudflare/raw/master/pic.png" width="250"></a></br>
+<b>Sınırsız 1.1.1.1 WARP+ Verisi (betik)</b></h2>
 
-![](https://github.com/xorcan/warp-plus-cloudflare/raw/master/pic.png)
+buradaki betiklerle 1.1.1.1 WARP+ hesabınızı süresiz olarak reşarj edebilirsiniz.
+
+![Kod Boyutu](https://img.shields.io/github/languages/code-size/xorcan/warp-plus-cloudflare) ![Tepe Dil](https://img.shields.io/github/languages/top/xorcan/warp-plus-cloudflare) ![GitHub Yıldızı](https://img.shields.io/github/stars/xorcan/warp-plus-cloudflare) ![Lisans](https://img.shields.io/github/license/xorcan/warp-plus-cloudflare) ![Hatalar](https://img.shields.io/github/issues/xorcan/warp-plus-cloudflare) ![Forklar](https://img.shields.io/github/forks/xorcan/warp-plus-cloudflare)
+
+# sınırsız warp+ verisi alma yöntemi
 
 **not: bu betik benim tarafımdan yazılmamıştır. sadece tamamlanmış, türkçeleştirilmiş ve "tek başına çalıştırılabilirlik" eklenmiştir.** 😉
-
-### bu komut dosyasıyla 1.1.1.1 warp+ hesabınızı süresiz olarak reşarj edebilirsiniz. 📱
 
 ### [?] warp+ nedir?
 warp+, daha yüksek hızlar elde etmek ve bağlantınızın internet'in uzun vadede şifrelenmesini sağlamak için cloudflare’nin argo olarak bilinen sanal özel omurgasını kullanır. [daha fazla bilgi (ingilizce)](https://blog.cloudflare.com/announcing-warp-plus/)
@@ -53,3 +55,13 @@ warp+, daha yüksek hızlar elde etmek ve bağlantınızın internet'in uzun vad
 4. i̇stemci yapılandırması (client configuration)'nın altındaki kimlik (id) > basılı tutun ve kopyalayın.
 
 ![](https://github.com/xorcan/warp-plus-cloudflare/blob/master/id.jpg)
+
+## uyarı
+
+Bu makaledeki uygulamaların gizlilik sözleşmelerini okuyunuz. Eğer ne yaptığınızı bilmiyorsanız bu işlemlerden uzak durun. Her cihazın yapısı farklıdır, oluşabilecek sorunlardan makale editörü sorumlu tutulamaz.
+
+## lisans
+
+[![GNU GPLv3 Image](https://www.gnu.org/graphics/gplv3-127x51.png)](http://www.gnu.org/licenses/gpl-3.0.en.html)
+
+Tüm sorumluluk kullanıcıya aittir. Kullanabilir, çalışabilir ve paylaşmayı istediğiniz gibi geliştirebilirsiniz. Özellikle, Özgür Yazılım Vakfı tarafından yayımlanan [GNU Genel Kamu Lisansı](https://www.gnu.org/licenses/gpl.html) koşulları altında, lisansın 3. sürümü veya daha sonraki sürümlerinde yeniden dağıtabilir ve/veya değiştirebilirsiniz.
