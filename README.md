@@ -12,9 +12,9 @@ warp+, daha yüksek hızlar elde etmek ve bağlantınızın internet'in uzun vad
 ### [?] betik nasıl kullanılır? *( windows, mac, linux )*
 - öncelikle python'u sisteminize kurun. [python 3.8+](https://www.python.org/downloads/)
   - windows 10 kullanıyorsanız: 
-- - herhangi bir klasörde shift tuşuyla birlite sağ tıklayıp powershell'i açın
-- - `python` yazın ve enterlayın, sizi mağazaya yönlendirecek.
-- - yönlendirse de yönlendirmese de mağazadan python'u ayrıca indirip kurun.
+  - herhangi bir klasörde shift tuşuyla birlite sağ tıklayıp powershell'i açın
+  - `python` yazın ve enterlayın, sizi mağazaya yönlendirecek.
+  - yönlendirse de yönlendirmese de mağazadan python'u ayrıca indirip kurun.
 - modül isteklerini yükleyelim:
 - aynı yöntemlerle cmd / terminale kopyalayın ve enterlayın: `pip install requests`
 - [buradan](https://github.com/xorcan/warp-plus-cloudflare/archive/master.zip) projeyi indirin ve çıkartın (unzip)
