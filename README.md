@@ -11,7 +11,7 @@ warp+, daha yüksek hızlar elde etmek ve bağlantınızın internet'in uzun vad
 
 ### [?] betik nasıl kullanılır? *( windows, mac, linux )*
 - öncelikle python'u sisteminize kurun. [python 3.8+](https://www.python.org/downloads/)
-- - windows 10 kullanıyorsanız: 
+  - windows 10 kullanıyorsanız: 
 - - herhangi bir klasörde shift tuşuyla birlite sağ tıklayıp powershell'i açın
 - - `python` yazın ve enterlayın, sizi mağazaya yönlendirecek.
 - - yönlendirse de yönlendirmese de mağazadan python'u ayrıca indirip kurun.
