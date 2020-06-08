@@ -8,12 +8,12 @@ import os
 import sys
 import pathlib
 
-script_version = '4.0.0'
-script_title   = f"WARP-PLUS-CLOUDFLARE - ALIILAPRO / XORCAN (v {script_version})"
+script_version = '4.0.1.S+'
+script_title   = f"[i] WARP-PLUS-CLOUDFLARE - ALIILAPRO / XORCAN (v{script_version})"
 os.system('title ' + script_title if os.name == 'nt' else 'PS1="\[\e]0;' + script_title + '\a\]"; echo $PS1')
 os.system('cls' if os.name == 'nt' else 'clear')
 print ("---------------------------------------------------------------------------")
-print ("[1] 1.1.1.1 için sınırsız WARP+ verisi (betik) - normal sürüm")
+print ("[1] 1.1.1.1 için sınırsız WARP+ verisi (betik) - soran sürüm (S+)")
 print ("---------------------------------------------------------------------------")
 print ("[?] S; WARP+ kimliği (id) nasıl alınır?")
 print ("[-] C; 1.1.1.1 uygulamasından: [ Ayarlar/Gelişmiş/Tanılamalar/Kimlik ]")
@@ -27,7 +27,6 @@ print ("[i] soru sormadan çalışan sürüm de mevcut: [warp2.py]")
 print ("---------------------------------------------------------------------------")
 print ("[i] aliilapro tarafından yazıldı [ aliilapro.github.io ]")
 print ("[i] xorcan tarafından türkçeleştirildi [ github.com/xorcan ]")
-print ("[i] anlatımı hazırlayan kişiye teşekkürler: anonim")
 print ("---------------------------------------------------------------------------")
 
 def newID():
@@ -133,25 +132,26 @@ while True:
 	os.system('cls' if os.name == 'nt' else 'clear')
 	print("")
 	print(f"{script_title}")
+	print("[w] github.com/xorcan/warp-plus-cloudflare")
 	print("")
 	result = sendRequest()
 	result.start()
 	print(f"[-] Üzerinde çalışılan kimlik: {referrer}")
+	print(f"[#] Toplam: {g} Başarılı, {b} Başarısız.")
 	progressBar()
 	if result.status == 200:
 		g += 1
-		print(f"\n[#] Toplam: {g} Başarılı {b} Başarısız.")
 		print("")
-		print(f"[:)] {g} GB kullanım hakkı hesabınıza eklendi.")
+		print(f"[#] {g} GB kullanım hakkı hesabınıza eklendi.")
 		for i in range(18,0,-1):
 			sys.stdout.write(f"\r[*] {i} saniye sonra yeni bir istek gönderilecek.")
 			sys.stdout.flush()
 			time.sleep(1)
 	else:
 		b += 1
-		print(f"\n[#] Toplam: {g} Başarılı {b} Başarısız.")
+		print(f"\n[#] Toplam: {g} Başarılı, {b} Başarısız.")
 		print("")
-		print("[:(] Sunucuya bağlanırken hata oluştu: " + str(result.status))
+		print("[#] Sunucuya bağlanırken hata oluştu: " + str(result.status))
 		for i in range(18,0,-1):
 			sys.stdout.write(f"\r[*] {i} saniye içinde tekrar deneniyor...")
 			sys.stdout.flush()
