@@ -138,6 +138,7 @@ while True:
 	result.start()
 	print(f"[-] Üzerinde çalışılan kimlik: {referrer}")
 	print(f"[#] Toplam: {g} Başarılı, {b} Başarısız.")
+	print("")
 	progressBar()
 	if result.status == 200:
 		g += 1
